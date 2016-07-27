@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="google">
+
+<!--Credentials: -->
+
+<parameter name="senderLogin"     value="ENTER_EMAIL"         />
+<parameter name="senderPassword"  value="ENTER_PASSWORD"                     />
+        <!--Credentials: END -->
+
+
+        <!--Properties: -->
+<parameter name = "URL"  value="http://google.com"/>
+
+
+    <test name="googleTest">
+
+        <classes>
+            <class name="Tests.ALittleBitConversationScenario" />
+        </classes>
+
+    </test>
+</suite>
